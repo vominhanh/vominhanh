@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function kiemtraHT(){
+        let mauKT_HoTen=/^([a-z]+)((\s{1}[a-z]+){1,})$/i;
+        let chuoi=document.getElementById("txtHT").value.trim();
+        if (mauKT_HoTen.test(chuoi)==true) {
+            spTrangThai.innerText="Nhập đúng"
+        } else {
+            spTrangThai.innerText="Nhập chưa đúng"
+        }
+    }
+    function kiemtraUserName(){
+        let mau_KTUserName=/^[A-Za-z0-9_-]{6,32}$/;
+        let chuoi=document.getElementById('txtUserName').value.trim();
+        if (mau_KTUserName.test(chuoi)==true) {
+            spTrangThaiUS.innerText="Nhập đúng";
+            
+        } else {
+            spTrangThaiUS.innerText="Nhập sai"
+        }
+    }
+
+    </script>
+</head>
+<body>
+    <form action="" method="post">
+        <fieldset>
+            <legend>Thông tin kiếm</legend>
+            <label for="lblHT">KT họ tên</label>
+            <input type="text" name="txtHT" id="TXtHT">
+            <span id ="spTrangThai">*</span>
+
+            <label for="lblTenTK">UserName</label>
+            <input type="text" name="txtUserName" id="txtUserName" onblur="kiemTraUserName()">
+            <span id="spTrangThaiUS">*</span>
+        </fieldset>
+    </form>
+    
+</body>
+</html>
