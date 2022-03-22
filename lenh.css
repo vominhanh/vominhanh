@@ -1,0 +1,40 @@
+*{
+    margin: 0 auto;
+    padding: 0px;
+    
+}
+#Nav{
+    
+    width: 960px;
+    height: 55px;
+    background-color: thistle;
+}
+.Menu li{
+    width: 140px;
+    height: 50px;
+    float: left;
+    list-style-type: none;
+    line-height: 50px;
+    text-indent: 5px;
+    text-align: center;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+    
+}
+a:hover{
+    background-color: white;
+    color: black;
+    display: block;
+    
+    
+}
+#Nav span{
+    border-radius: 50%;
+    font-size: 18px;
+    float: right;
+    padding: 15px;
+    color: red;
+    font-weight: bold;
+}
